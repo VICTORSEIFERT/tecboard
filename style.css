@@ -1,0 +1,137 @@
+@font-face {
+    font-family: "Unbounded";
+    src: url("../Tecboard/fonts/Unbounded-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../Tecboard/fonts/Poppins-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base (Mobile First) */
+body {
+    background-color: #0E1014;
+    color: #FFFFFF;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Container padrão */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header img {
+    display: block;
+    margin: 32px 0 0 0;
+}
+
+/* Título */
+h1 {
+    font-family: "Unbounded", sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+h1 span {
+    color: #9747FF;
+}
+
+/* Texto */
+p {
+    font-size: 18px;
+    text-align: center;
+    margin: 20px auto 0;
+    max-width: 600px;
+}
+
+/* Botão */
+a {
+    display: block;
+    margin: 30px auto;
+    width: 220px;
+    height: 56px;
+    line-height: 56px;
+    text-align: center;
+    border-radius: 36px;
+    background-color: #9747FF;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #8233E8;
+}
+
+/* Imagem */
+section img {
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    margin: 20px auto;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+
+    header img {
+        margin-left: 40px;
+    }
+
+    h1 {
+        font-size: 56px;
+    }
+
+    p {
+        font-size: 20px;
+        max-width: 700px;
+    }
+
+    a {
+        width: 260px;
+        height: 60px;
+        line-height: 60px;
+    }
+
+    section img {
+        max-width: 500px;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+
+    header img {
+        margin-left: 120px;
+    }
+
+    h1 {
+        font-size: 64px;
+    }
+
+    p {
+        font-size: 24px;
+        max-width: 800px;
+    }
+
+    section img {
+        max-width: 700px;
+    }
+}
